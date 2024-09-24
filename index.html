@@ -30,7 +30,7 @@
             </div>
             <div class="flex items-center justify-center gap-3">
                 <img class="h-5 w-5" src="assets/coin.png" alt="">
-                <h3 class="text-[#111111B3]">5500 BDT</h3>
+                <h3 id="total-amount" class="text-[#111111B3]">5500 BDT</h3>
             </div>
         </nav>
         <div class="flex gap-4 pt-5 pb-5 items-center justify-center">
@@ -52,7 +52,7 @@
                     <div class="card-body pt-0 md:mt-0 md:w-[50%] pb-4 mt-2">
                         <button class="btn md:w-[40%] mx-auto md:mx-0">
                             <img class="h-5 w-5" src="assets/coin.png" alt="">
-                            <h3 class="text-[#111111B3]">5500 BDT</h3>
+                            <h3 id="noakhali-amount" class="text-[#111111B3]">5500 BDT</h3>
                         </button>
                         <h3 class="text-[#111111] font-bold text-xl">Donate for Flood at Noakhali, Bangladesh</h3>
                         <p class="text-[#111111B3] text-base font-light"> The recent floods in Noakhali have caused
@@ -63,9 +63,10 @@
                             contribution, big or small, makes difference. Please join us in supporting the relief
                             efforts
                             and making a positive impact on the lives of those in need.</p>
-                        <input type="text" placeholder="Write Donation Amount" class="input input-bordered w-full" />
+                        <input id="noakhali-donate-input" type="text" placeholder="Write Donation Amount"
+                            class="input input-bordered w-full" />
                         <div class="card-actions justify-end">
-                            <button
+                            <button id="noakhali-button"
                                 class="btn btn-primary w-full bg-[#B4F461] text-black border-none hover:bg-[#f0f0f0]">Donate
                                 Now</button>
                         </div>
@@ -83,7 +84,7 @@
                     <div class="card-body pt-0 md:mt-0 md:w-[50%] pb-4 mt-2">
                         <button class="btn md:w-[40%] mx-auto md:mx-0">
                             <img class="h-5 w-5" src="assets/coin.png" alt="">
-                            <h3 class="text-[#111111B3]">5500 BDT</h3>
+                            <h3 id="feni-amount" class="text-[#111111B3]">5500 BDT</h3>
                         </button>
                         <h3 class="text-[#111111] font-bold text-xl">Donate for Flood at Noakhali, Bangladesh</h3>
                         <p class="text-[#111111B3] text-base font-light"> The recent floods in Noakhali have caused
@@ -94,9 +95,10 @@
                             contribution, big or small, makes difference. Please join us in supporting the relief
                             efforts
                             and making a positive impact on the lives of those in need.</p>
-                        <input type="text" placeholder="Write Donation Amount" class="input input-bordered w-full" />
+                        <input id="feni-donate-input" type="text" placeholder="Write Donation Amount"
+                            class="input input-bordered w-full" />
                         <div class="card-actions justify-end">
-                            <button
+                            <button id="feni-button"
                                 class="btn btn-primary w-full bg-[#B4F461] text-black border-none hover:bg-[#f0f0f0]">Donate
                                 Now</button>
                         </div>
@@ -115,7 +117,7 @@
                     <div class="card-body pt-0 md:mt-0 md:w-[50%] pb-4 mt-2">
                         <button class="btn md:w-[40%] mx-auto md:mx-0">
                             <img class="h-5 w-5" src="assets/coin.png" alt="">
-                            <h3 class="text-[#111111B3]">5500 BDT</h3>
+                            <h3 id="quota-amount" class="text-[#111111B3]">5500 BDT</h3>
                         </button>
                         <h3 class="text-[#111111] font-bold text-xl">Donate for Flood at Noakhali, Bangladesh</h3>
                         <p class="text-[#111111B3] text-base font-light"> The recent floods in Noakhali have caused
@@ -126,9 +128,10 @@
                             contribution, big or small, makes difference. Please join us in supporting the relief
                             efforts
                             and making a positive impact on the lives of those in need.</p>
-                        <input type="text" placeholder="Write Donation Amount" class="input input-bordered w-full" />
+                        <input id="quota-donate-input" type="text" placeholder="Write Donation Amount"
+                            class="input input-bordered w-full" />
                         <div class="card-actions justify-end">
-                            <button
+                            <button id="quota-button"
                                 class="btn btn-primary w-full bg-[#B4F461] text-black border-none hover:bg-[#f0f0f0]">Donate
                                 Now</button>
                         </div>
@@ -162,6 +165,8 @@
             </dialog>
 
     </main>
+    <script src="js/utilitie.js"></script>
+    <script src="js/donation.js"></script>
 </body>
 
 </html>
